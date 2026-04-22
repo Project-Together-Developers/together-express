@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { env } from '../config/env';
-import { AuthPayload } from '../types';
+import { AuthPayload, RefreshPayload } from '../types';
 
 export function signAccessToken(payload: AuthPayload): string {
   return jwt.sign(payload, env.jwt.accessSecret, {
@@ -8,7 +8,7 @@ export function signAccessToken(payload: AuthPayload): string {
   } as jwt.SignOptions);
 }
 
-export function signRefreshToken(payload: AuthPayload): string {
+export function signRefreshToken(payload: RefreshPayload): string {
   return jwt.sign(payload, env.jwt.refreshSecret, {
     expiresIn: env.jwt.refreshExpiresIn as string,
   } as jwt.SignOptions);
@@ -18,6 +18,6 @@ export function verifyAccessToken(token: string): AuthPayload {
   return jwt.verify(token, env.jwt.accessSecret) as AuthPayload;
 }
 
-export function verifyRefreshToken(token: string): AuthPayload {
-  return jwt.verify(token, env.jwt.refreshSecret) as AuthPayload;
+export function verifyRefreshToken(token: string): RefreshPayload {
+  return jwt.verify(token, env.jwt.refreshSecret) as RefreshPayload;
 }

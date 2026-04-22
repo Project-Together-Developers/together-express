@@ -6,6 +6,10 @@ export interface AuthPayload {
   role: 'user' | 'admin';
 }
 
+export interface RefreshPayload extends AuthPayload {
+  tokenId: string;
+}
+
 export interface AuthRequest extends Request {
   user?: AuthPayload;
 }
