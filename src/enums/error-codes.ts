@@ -15,10 +15,24 @@ export enum ErrorMessage {
   EMAIL_AND_PASSWORD_REQUIRED = 'Email and password are required',
   INVALID_CREDENTIALS = 'Invalid credentials',
   TELEGRAM_GATEWAY_ERROR = 'Telegram Gateway error',
+  USERNAME_REQUIRED = 'Username is required',
+  USERNAME_INVALID = 'Username must be 3-20 chars and contain only lowercase letters, digits, _ or .',
+  USERNAME_TAKEN = 'Username is already taken',
+  FIRSTNAME_REQUIRED = 'First name is required',
+  FIRSTNAME_TOO_LONG = 'First name must be at most 50 characters',
+  LASTNAME_TOO_LONG = 'Last name must be at most 50 characters',
+  INVALID_GENDER = 'Gender must be male or female',
+  INVALID_BIRTHDAY = 'Birthday must be a valid date in DD/MM/YYYY format',
+  UNDERAGE = 'You must be at least 13 years old',
+  AVATAR_TOO_LARGE = 'Avatar file must be smaller than 5MB',
+  AVATAR_INVALID_TYPE = 'Avatar must be an image file',
+  PROFILE_ALREADY_COMPLETE = 'Profile is already complete',
+  USER_NOT_FOUND = 'User not found',
 }
 
 export enum SuccessMessage {
   OTP_SENT = 'OTP sent successfully',
   AUTH_SUCCESS = 'Authentication successful',
   LOGGED_OUT = 'Logged out successfully',
+  PROFILE_COMPLETED = 'Profile completed successfully',
 }
