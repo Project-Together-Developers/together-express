@@ -28,6 +28,8 @@ export enum ErrorMessage {
   AVATAR_INVALID_TYPE = 'Avatar must be an image file',
   PROFILE_ALREADY_COMPLETE = 'Profile is already complete',
   USER_NOT_FOUND = 'User not found',
+  EVENT_NOT_FOUND = 'Event not found',
+  ACTIVITY_NOT_FOUND = 'Activity not found',
 }
 
 export enum SuccessMessage {
