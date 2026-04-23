@@ -11,9 +11,7 @@ npm start        # Run compiled output (requires build first)
 npm run lint     # ESLint on src/
 ```
 
-No test runner is configured yet.
-
 ## Docs (read only when needed)
 For API conventions, read `docs/api.md`
-For folder structure, read `docs/folder-structure.md`
-
+For architecture layers, read `docs/architecture-layers.md`
+For project rules, read `docs/project-rules.md`

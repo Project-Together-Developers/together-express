@@ -1,0 +1,12 @@
+# Architecture Layers
+- **Framework:** Express + TypeScript. Routes under `/v1`.
+- **Layers:**
+  - `routes/`: Route definitions & middleware.
+  - `controllers/`: Thin request handlers.
+  - `models/`: Mongoose DB schemas.
+  - `schemas/`: Zod validation schemas.
+  - `services/`: Business logic & external APIs.
+  - `middleware/`: Auth, validation, error, i18n handlers.
+  - `config/`: Setup (Redis, MongoDB, R2, ENV).
+  - `utils/`: Helpers (JWT, responses).
+  - `enums/`: Constants (errors, successes).
