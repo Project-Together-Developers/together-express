@@ -5,10 +5,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev      # Start dev server with hot reload (ts-node-dev)
-npm run build    # Compile TypeScript to dist/
-npm start        # Run compiled output (requires build first)
-npm run lint     # ESLint on src/
+npm run dev     
+npm run build   
+npm start       
+npm run lint    
 ```
 
 ## Docs (read only when needed)
