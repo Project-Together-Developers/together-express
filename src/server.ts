@@ -25,7 +25,7 @@ async function bootstrap(): Promise<void> {
     });
   });
 
-  httpServer.listen(env.port, () => {
+  httpServer.listen(env.port, '0.0.0.0', () => {
     console.log(`[Server] Running on port ${env.port} in ${env.nodeEnv} mode`);
   });
 }

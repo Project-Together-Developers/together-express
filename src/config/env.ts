@@ -40,6 +40,8 @@ export const env = {
   },
 
   cors: {
-    allowedOrigins: (process.env.ALLOWED_ORIGINS || 'http://localhost:5173').split(','),
+    allowedOrigins: process.env.ALLOWED_ORIGINS === '*'
+      ? '*'
+      : (process.env.ALLOWED_ORIGINS || '*').split(','),
   },
 };

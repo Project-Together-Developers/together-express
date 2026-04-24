@@ -30,6 +30,9 @@ export enum ErrorMessage {
   USER_NOT_FOUND = 'User not found',
   EVENT_NOT_FOUND = 'Event not found',
   ACTIVITY_NOT_FOUND = 'Activity not found',
+  ALREADY_JOINED = 'You have already joined this event',
+  EVENT_FULL = 'This event is full',
+  NOT_JOINED = 'You have not joined this event',
 }
 
 export enum SuccessMessage {
